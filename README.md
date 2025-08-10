@@ -1,7 +1,7 @@
 # HappyGrumpy
 
 HappyGrumpy is an application for businesses that want to understand the mood of their coworkers.
-It helps coworkers share instant feelings about professional situations. Managers can then analyze anonymized trends to detect emotion intensity, smooth conflicts, and improve overall efficiency and communication.
+It helps coworkers share instant feelings about professional situations. Managers can then analyze anonymized trends to detect emotion intensity, incoming conflicts, and improve overall efficiency and communication.
 
 Coworkers share emotions only with their trusted coworkers. This allows them to express and compare their feelings privately and comfortably. Often, simply sharing emotions is already half the solution to frustration.
 
