@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyGrumpy - Workplace Mood Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>HappyGrumpy</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How it Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Listen to Your Team's Mood</h1>
+                    <p class="hero-subtitle">Empower your workplace with instant emotion sharing. Help managers detect issues, smooth conflicts, and improve team communication.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">Get Started</button>
+                        <button class="btn btn-secondary">Learn More</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="emotion-grid">
+                        <div class="emotion-card">
+                            <div class="emotion-container">
+                                <img src="../samples/happy.png" alt="Happy" class="emotion-img">
+                                <span class="emotion-emoji">😊</span>
+                            </div>
+                        </div>
+                        <div class="emotion-card">
+                            <div class="emotion-container">
+                                <img src="../samples/sad.png" alt="Sad" class="emotion-img">
+                                <span class="emotion-emoji">😢</span>
+                            </div>
+                        </div>
+                        <div class="emotion-card">
+                            <div class="emotion-container">
+                                <img src="../samples/angry.png" alt="Angry" class="emotion-img">
+                                <span class="emotion-emoji">😠</span>
+                            </div>
+                        </div>
+                        <div class="emotion-card">
+                            <div class="emotion-container">
+                                <img src="../samples/snirky.png" alt="Snirky" class="emotion-img">
+                                <span class="emotion-emoji">😏</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Why HappyGrumpy?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Real-time Analytics</h3>
+                        <p>Track team mood trends and identify patterns that affect productivity and communication.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Instant Feedback</h3>
+                        <p>Employees can share their feelings about professional situations in seconds.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Proactive Management</h3>
+                        <p>Managers can detect issues early and take action to improve team dynamics.</p>
+                    </div>
+                </div>
+                
+                <div class="emotion-map-section">
+                    <div class="emotion-map-content">
+                        <div class="emotion-map-text">
+                            <h3>Emotion Map Insights</h3>
+                            <p>Managers can consult the emotions-map to detect where strong feelings occur across the organization. This powerful visualization tool helps identify hotspots of emotional intensity, enabling targeted interventions to address team concerns and improve workplace harmony.</p>
+                        </div>
+                        <div class="emotion-map-illustration">
+                            <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Background grid -->
+                                <defs>
+                                    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                                        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+                                    </pattern>
+                                </defs>
+                                <rect width="300" height="200" fill="url(#grid)"/>
+                                
+                                <!-- Department areas -->
+                                <circle cx="80" cy="60" r="25" fill="#fbbf24" opacity="0.8"/>
+                                <circle cx="220" cy="80" r="20" fill="#ef4444" opacity="0.9"/>
+                                <circle cx="150" cy="140" r="30" fill="#10b981" opacity="0.7"/>
+                                <circle cx="50" cy="150" r="15" fill="#8b5cf6" opacity="0.8"/>
+                                <circle cx="250" cy="120" r="18" fill="#f59e0b" opacity="0.8"/>
+                                
+                                <!-- Emotion indicators -->
+                                <text x="80" y="65" text-anchor="middle" font-size="16" fill="white" font-weight="bold">😊</text>
+                                <text x="220" y="85" text-anchor="middle" font-size="14" fill="white" font-weight="bold">😠</text>
+                                <text x="150" y="145" text-anchor="middle" font-size="18" fill="white" font-weight="bold">😢</text>
+                                <text x="50" y="155" text-anchor="middle" font-size="12" fill="white" font-weight="bold">😏</text>
+                                <text x="250" y="125" text-anchor="middle" font-size="13" fill="white" font-weight="bold">😊</text>
+                                
+                                <!-- Heat map intensity -->
+                                <circle cx="220" cy="80" r="35" fill="none" stroke="#ef4444" stroke-width="3" opacity="0.3"/>
+                                <circle cx="150" cy="140" r="45" fill="none" stroke="#10b981" stroke-width="2" opacity="0.4"/>
+                                
+                                <!-- Legend -->
+                                <rect x="10" y="10" width="12" height="12" fill="#fbbf24" opacity="0.8"/>
+                                <text x="30" y="20" font-size="10" fill="#374151">Happy</text>
+                                <rect x="10" y="25" width="12" height="12" fill="#ef4444" opacity="0.9"/>
+                                <text x="30" y="35" font-size="10" fill="#374151">Angry</text>
+                                <rect x="10" y="40" width="12" height="12" fill="#10b981" opacity="0.7"/>
+                                <text x="30" y="50" font-size="10" fill="#374151">Sad</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Share Emotions</h3>
+                        <p>Team members express their current mood using simple emotion indicators.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Analyze Trends</h3>
+                        <p>Managers review aggregated data to understand team sentiment patterns.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Improve Communication</h3>
+                        <p>Use insights to address concerns and enhance workplace efficiency.</p>
+                    </div>
+                </div>
+                
+                <div class="privacy-section">
+                    <div class="privacy-icon">🔒</div>
+                    <h3>Your Privacy Matters</h3>
+                    <p>Shared messages remain completely private between sender and recipients. Only emotion levels are aggregated and shared with managers through the emotions-map, ensuring personal conversations stay confidential while providing valuable team insights.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Transform Your Workplace?</h2>
+                <p>Join companies that are already using HappyGrumpy to build better teams.</p>
+                <button class="btn btn-primary btn-large">Start Your Free Trial</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 HappyGrumpy. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
